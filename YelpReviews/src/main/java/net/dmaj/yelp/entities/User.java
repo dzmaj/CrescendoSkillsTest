@@ -1,6 +1,8 @@
 package net.dmaj.yelp.entities;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
 	
 //  "user": {
 //  "id": "tyv7D06Ox_M3acQz7O7OIw",

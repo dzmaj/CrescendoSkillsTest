@@ -1,8 +1,9 @@
 package net.dmaj.yelp.entities;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
-public class Review {
+public class Review implements Serializable {
 
 	
 //	{

@@ -22,10 +22,18 @@ public class ReviewController {
 	@Autowired
 	private ReviewService reviewService;
 	
+//	@GetMapping("{id}/reviews")
+//	public List<Review> showReviews(@PathVariable String id) {
+//		
+//		List<Review> reviews = reviewService.showReviews(id);
+//		
+//		return reviews;
+//	}
+	
 	@GetMapping("{id}/reviews")
-	public List<Review> showReviews(@PathVariable String id) {
+	public String showReviews(@PathVariable String id) {
 		
-		List<Review> reviews = reviewService.showReviews(id);
+		String reviews = reviewService.showReviewsJsonString(id);
 		
 		return reviews;
 	}
